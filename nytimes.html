@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYTimes</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+ 	<link rel="stylesheet"  href="https://bootswatch.com/4/slate/bootstrap.css">
+</head>
+<body>
+	<div class=container>
+		<div class="jumbotron">
+			<h1 class="display-3">New York Times Search</h1>
+		</div>
+		<form>
+			<div class="form-group">
+				<label >Search</label>
+				<input class="form-control" id="searchTerms"  placeholder="Search">
+			</div>
+			<div class="form-group">
+      	<label id="recordNumber">Number of Records</label>
+      	<select class="form-control" >
+        	<option>1</option>
+        	<option>5</option>
+        	<option>10</option>
+      	</select>
+      	<div class="form-group">
+			<label >Start Year(optional)</label>
+			<input class="form-control" id="startYear"  placeholder="">
+		</div>
+		<div class="form-group">
+			<label >End Year Year(optional)</label>
+			<input class="form-control" id="endYear"  placeholder="">
+		</div>
+		<button type="button" class="btn btn-primary btn-lg" id="search">Search</button>
+		<button type="button" class="btn btn-primary btn-lg" id="clearResults">Clear Results</button>
+		<div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+  		<div class="card-header">Top Articles</div>
+  		<div class="card-body" id="topArticles"></div>
+    	
+  </div>
+</div>
+    </div>
+		</form>
+
+	</div>
+
+</body>
+</html>
